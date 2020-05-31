@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Используя цикл for вывести все элементы разреженного массива [5, ,2, ,18]</p>
+<p id="demo"></p>
+<p id="demo2"></p>
+
+<script>
+var myArray = [5, ,2, ,18];
+var myArray1 = '';
+for (var i = 0; i < myArray.length; i++) {
+    myArray1 += myArray[i] + ' ';
+}
+document.getElementById("demo").innerHTML = "С выводом и несуществующих элементов: " + myArray1;
+</script>
+<script>
+var myArray = [5, ,2, ,18];
+var myArray2 = '';
+for (var i = 0; i < myArray.length; i++) {
+    if (i in myArray){
+	myArray2 += myArray[i] + ' ';
+	}
+}
+document.getElementById("demo2").innerHTML = "С выводом только существующих элементов: " + myArray2;
+</script>
+
+</body>
+</html>

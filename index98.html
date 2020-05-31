@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Вывести первый элемент, используя функцию shift.</p>
+
+<button onclick="myFunction()">Нажми меня!</button>
+
+<p id="demo"></p>
+
+<script>
+var myArray = ["Реал","Барселона","Атлетико"];
+document.getElementById("demo").innerHTML = myArray;
+
+function myFunction() {
+  alert(myArray.shift());
+  document.getElementById("demo").innerHTML = myArray;
+}
+</script>
+
+</body>
+</html>

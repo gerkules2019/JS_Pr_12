@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Используя функцию splice сделать массив из [1,2,3,4,5] в [1,"a","b",2,3,4,"c",5,"e"]</p>
+
+<button onclick="myFunction()">Нажми меня</button>
+
+<p id="demo"></p>
+
+<script>
+var myArray = [1,2,3,4,5];
+document.getElementById("demo").innerHTML = myArray;
+
+function myFunction() {
+  myArray.splice(1,0,"a","b");
+  myArray.splice(6,0,"c");
+  myArray.splice(8,0,"e");
+  document.getElementById("demo").innerHTML = myArray;
+}
+</script>
+
+</body>
+</html>

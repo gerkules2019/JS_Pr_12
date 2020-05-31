@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Используя функцию sort отсортировать массив [5,6,1,30,8,0,2,10,4]</p>
+
+<button onclick="myFunction()">Нажми меня</button>
+
+<p id="demo"></p>
+
+<script>
+var myArray = [5,6,1,30,8,0,2,10,4];
+document.getElementById("demo").innerHTML = myArray;
+
+function myFunction() {
+  myArray.sort(function(a,b){return a-b});
+  document.getElementById("demo").innerHTML = myArray;
+}
+</script>
+
+</body>
+</html>

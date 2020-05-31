@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+	<title>Самостоятельная работа</title>
+</head>
+<body>
+
+<p>Используя функцию sort удалить повторяющиеся элементы из массива ["a","b","c","b","a"].</p>
+
+<button onclick="myFunction()">Нажми меня</button>
+
+<p id="demo"></p>
+
+<script>
+var myArray = ["a","b","c","b","a"];
+document.getElementById("demo").innerHTML = myArray;
+
+function myFunction() {
+  myArray.sort();
+  var unique = myArray.filter((v, i, a) => a.indexOf(v) === i);
+  document.getElementById("demo").innerHTML = unique;
+}
+</script>
+
+</body>
+</html>

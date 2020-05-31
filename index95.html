@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+	<title>Самостоятельная работа</title>
+</head>
+<body>
+
+<p>Есть массив [7,8,9]. Используя функцию reverse сделать из него массив [9,8,7].</p>
+
+<button onclick="myFunction()">Нажми меня</button>
+
+<p id="demo"></p>
+
+<script>
+	var myArray = [7,8,9];
+	document.getElementById("demo").innerHTML = myArray;
+
+	function myFunction() {
+		myArray.reverse();
+		document.getElementById("demo").innerHTML = myArray;
+}
+</script>
+
+</body>
+</html>

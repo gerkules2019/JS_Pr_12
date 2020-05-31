@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Вывести последний элемент, используя функцию pop.</p>
+
+<button onclick="myFunction()">Нажми меня!</button>
+
+<p id="demo"></p>
+
+<script>
+var myArray = ["Лестер","Тоттенхем","Арсенал"];
+document.getElementById("demo").innerHTML = myArray;
+
+function myFunction() {
+  alert(myArray.pop());
+  document.getElementById("demo").innerHTML = myArray;
+}
+</script>
+
+</body>
+</html>
